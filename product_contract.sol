@@ -1,7 +1,7 @@
 pragma ton-solidity >= 0.35.0;
 pragma AbiHeader expire;
 
-contract Accumulator {
+contract product_of_numbers {
 
 	// State variable storing the sum of arguments that were passed to function 'add',
 	uint public sum = 1; // initializing by 1
