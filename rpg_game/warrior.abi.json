@@ -1,0 +1,78 @@
+{
+	"ABI version": 2,
+	"version": "2.1",
+	"header": ["time", "expire"],
+	"functions": [
+		{
+			"name": "constructor",
+			"inputs": [
+				{"name":"base","type":"address"},
+				{"name":"atk","type":"uint256"},
+				{"name":"def","type":"uint256"}
+			],
+			"outputs": [
+			]
+		},
+		{
+			"name": "get_attack_value",
+			"inputs": [
+				{"name":"value","type":"uint256"}
+			],
+			"outputs": [
+			]
+		},
+		{
+			"name": "get_def_value",
+			"inputs": [
+				{"name":"value","type":"uint256"}
+			],
+			"outputs": [
+			]
+		},
+		{
+			"name": "attack",
+			"inputs": [
+				{"name":"gameObjectInterface","type":"address"}
+			],
+			"outputs": [
+			]
+		},
+		{
+			"name": "death_by_base_station",
+			"inputs": [
+				{"name":"murderer","type":"address"}
+			],
+			"outputs": [
+			]
+		},
+		{
+			"name": "get_attack",
+			"inputs": [
+				{"name":"damage","type":"uint256"}
+			],
+			"outputs": [
+			]
+		},
+		{
+			"name": "address_base",
+			"inputs": [
+			],
+			"outputs": [
+				{"name":"address_base","type":"address"}
+			]
+		}
+	],
+	"data": [
+	],
+	"events": [
+	],
+	"fields": [
+		{"name":"_pubkey","type":"uint256"},
+		{"name":"_timestamp","type":"uint64"},
+		{"name":"_constructorFlag","type":"bool"},
+		{"name":"health","type":"uint256"},
+		{"name":"def_value","type":"uint256"},
+		{"name":"atk_value","type":"uint256"},
+		{"name":"address_base","type":"address"}
+	]
+}
