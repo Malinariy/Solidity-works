@@ -1,0 +1,73 @@
+{
+	"ABI version": 2,
+	"version": "2.1",
+	"header": ["time", "expire"],
+	"functions": [
+		{
+			"name": "constructor",
+			"inputs": [
+				{"name":"def_base_val","type":"uint256"}
+			],
+			"outputs": [
+			]
+		},
+		{
+			"name": "create_unit",
+			"inputs": [
+			],
+			"outputs": [
+			]
+		},
+		{
+			"name": "delete_unit",
+			"inputs": [
+			],
+			"outputs": [
+			]
+		},
+		{
+			"name": "get_def_value",
+			"inputs": [
+				{"name":"def_base_value","type":"uint256"}
+			],
+			"outputs": [
+			]
+		},
+		{
+			"name": "show_units",
+			"inputs": [
+			],
+			"outputs": [
+				{"name":"value0","type":"address[]"}
+			]
+		},
+		{
+			"name": "get_attack",
+			"inputs": [
+				{"name":"damage","type":"uint256"}
+			],
+			"outputs": [
+			]
+		},
+		{
+			"name": "units",
+			"inputs": [
+			],
+			"outputs": [
+				{"name":"units","type":"address[]"}
+			]
+		}
+	],
+	"data": [
+	],
+	"events": [
+	],
+	"fields": [
+		{"name":"_pubkey","type":"uint256"},
+		{"name":"_timestamp","type":"uint64"},
+		{"name":"_constructorFlag","type":"bool"},
+		{"name":"health","type":"uint256"},
+		{"name":"def_value","type":"uint256"},
+		{"name":"units","type":"address[]"}
+	]
+}
