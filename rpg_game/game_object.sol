@@ -9,7 +9,7 @@ contract game_object is game_interface {
     uint  def_value = 0;
 
     function get_attack(uint damage) external override {
-        health = health + (def_value - damage);
+        health = health - (damage - def_value);
         if (check_death() == true){
             death_ceremony(msg.sender);
         }
