@@ -17,10 +17,10 @@ contract base_station is game_object{
         units.push(msg.sender);
     }
 
-    function delete_unit() public { 
+    function delete_unit(address unit_addr) public { 
         tvm.accept();
         for (uint i = 0; i < units.length; i++){
-            if (units[i] == msg.sender){
+            if (units[i] == unit_addr){
                 delete units[i];
             }
         } 
