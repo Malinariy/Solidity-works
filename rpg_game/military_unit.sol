@@ -25,7 +25,7 @@ contract military_unit is game_object {
     }
 
     function death_ceremony(address murderer) internal override{
-        base_station(address_base).delete_unit();
+        base_station(address_base).delete_unit(this);
         self_destruction(murderer);
     }
 
