@@ -4,13 +4,14 @@ pragma AbiHeader time;
 pragma AbiHeader pubkey;
 
 import 'structs_storage.sol';
-import '../Terminal.sol';
-import '../Sdk.sol';
-import '../AddressInput.sol';
-import '../ConfirmInput.sol';
-import '../Debot.sol';
-import '../Menu.sol';
-import '../Upgradable.sol';
+import 'base/Terminal.sol';
+import 'base/Sdk.sol';
+import 'base/AddressInput.sol';
+import 'base/ConfirmInput.sol';
+import 'base/Debot.sol';
+import 'base/Menu.sol';
+import 'base/Upgradable.sol';
+
 
 abstract contract DeBot_init is Debot{
 
