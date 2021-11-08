@@ -33,7 +33,7 @@ abstract contract Debot {
     /// @return dabi String with debot ABI.
     function getDebotInfo() public functionID(0xDEB) view virtual returns(
         string name, string version, string publisher, string caption, string author,
-        address support, string hello, string language, string dabi);
+        address support, string hello, string language, string dabi, bytes icon);
 
     /// @notice Returns list of interfaces used by DeBot.
     function getRequiredInterfaces() public view virtual returns (uint256[] interfaces);
