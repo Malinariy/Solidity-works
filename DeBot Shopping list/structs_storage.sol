@@ -38,7 +38,6 @@ abstract contract A_HasConstructorWithPubKey {
 import 'DeBot_Init.sol' as init;
 
 contract Debot_Shop is DeBot_init{   
-   // internal override(fill_list, AtMarket)
 
     function _menu() external {
         string sep = '----------------------------------------';
