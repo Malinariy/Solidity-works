@@ -3,9 +3,9 @@
 
 This is an example of a "Shopping List" application. The application consists some contracts:
 
--contracts of DeBots: Debot_InitList.sol, Debot_FillList.sol, Debot_AtMarket.sol, ShopDebot.sol
+-contracts of DeBots: Debot_InitList.sol, Debot_FillList.sol, Debot_AtMarket.sol
 
--smart contract containing shopping list and file containig some structs, interfaces: shopList.sol and structForShopList.sol 
+-smart contract containing shopping list and file containig some structs, interfaces: ShopList.sol and structs_storage.sol 
 
 ## How to try DeBot in the Surf
 
