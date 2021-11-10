@@ -12,19 +12,24 @@ contract fill_list is DeBot_init{
     function _menu() virtual override internal {}
 
 // First step. Set name of purchase
-    function createPurchase(uint32 index) public{ //?
+    function createPurchase() public{
         Terminal.input(tvm.functionId(setPurchaseName), "Enter purchase name:", false);
     }
 
-    function setPurchaseName(string purchase_name) public {
-        PurchaseName = purchase_name;
-        //Terminal.input(tvm.functionId(setPurchaseAmount), "Enter amount of purchases", false);
-        ConfirmInput.get(tvm.functionId(setPurchaseAmount), "How much is needed?");
+    function setPurchaseName(string value) public {
+        PurchaseName = value;
+        Terminal.input(tvm.functionId(setPurchaseAmount), "Enter amount of purchases", false);
+        //ConfirmInput.get(tvm.functionId(setPurchaseAmount), "How much is needed?");
     }
 // Second step. Set amount of the purchase
-    function setPurchaseAmount(string amount_of_purchase) public {
-        (uint value, bool flag) = stoi(amount_of_purchase);
-        AddMyPurchase(uint32(value));
+    function setPurchaseAmount(string value) public {
+        (uint check_value, bool flag) = stoi(value);
+        if(flag){
+            AddMyPurchase(uint32(check_value));
+        } else {
+            Terminal.print(0, "Value must be integer number\nPlease, try again");
+            createPurchase();
+        }
     }
 
     function AddMyPurchase(uint32 amount_of_purchase) public {
