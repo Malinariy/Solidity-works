@@ -17,3 +17,4 @@ Open the link: https://web.ton.surf/debot?address=0%3Ab5ebeb5699908e2b58eb0bcec9
 
 ## Author
 - [@Chuk](https://github.com/Malinariy)
+- malinariy28@gmail.com
